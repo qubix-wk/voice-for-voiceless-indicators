@@ -1,0 +1,3 @@
+# Indicators from Citizen Lab research reports, each approved by a person before use.
+# Added through the daily watcher's pull requests (watcher/watch.py); see README.md.
+# Format: indicator <TAB> strength (strong | lead) <TAB> date: report title and address

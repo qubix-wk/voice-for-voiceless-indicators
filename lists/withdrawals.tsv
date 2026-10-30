@@ -1,0 +1,3 @@
+# Indicators withdrawn from every list (a mistake, or an address that changed hands).
+# Every installed app stops using these at its next list update.
+# Format: indicator <TAB> date withdrawn <TAB> reason

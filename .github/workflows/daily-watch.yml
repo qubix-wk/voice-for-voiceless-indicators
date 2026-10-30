@@ -1,0 +1,35 @@
+# Once a day: look for new Citizen Lab reports and Amnesty lists. New Citizen Lab candidates
+# go into a pull request for a person to review; nothing is used until it's merged.
+name: daily-watch
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Look for new reports and lists
+        run: python3 watcher/watch.py --propose
+      - name: Save the watcher's state and open a review request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          day="$(date -u +%F)"
+          if [ -s watcher/new.md ]; then
+            git checkout -b "candidates/$day"
+            git add lists/citizenlab-reviewed.tsv
+            git commit -m "Candidate indicators from Citizen Lab ($day)"
+            git push origin "candidates/$day"
+            gh pr create --base main --head "candidates/$day" \
+              --title "Review: new Citizen Lab indicators ($day)" --body-file watcher/new.md
+            git checkout main
+          fi
+          git add sources.json watcher/state.json
+          git diff --cached --quiet || { git commit -m "Daily watch ($day)"; git push origin main; }

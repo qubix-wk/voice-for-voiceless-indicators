@@ -1,0 +1,29 @@
+# Paragon Graphite: indicators copied by hand from The Citizen Lab's reports
+# (no machine-readable list exists; checked 2026-10-29 in citizenlab/malware-indicators and
+# mvt-project/mvt-indicators). Read and copied 2026-10-29 from:
+#   R1 "Virtue or Vice? A First Look at Paragon's Proliferating Spyware Operations", 19 March 2025
+#      https://citizenlab.ca/research/a-first-look-at-paragons-proliferating-spyware-operations/
+#   R2 "Graphite Caught: First Forensic Confirmation of Paragon's iOS Mercenary Spyware Finds
+#      Journalists Targeted", 12 June 2025
+#      https://citizenlab.ca/research/first-forensic-confirmation-of-paragons-ios-mercenary-spyware-finds-journalists-targeted/
+#
+# Format: indicator <TAB> strength <TAB> note.  strength: strong = a match is evidence;
+# lead = shown as "worth a look" only.
+#
+# Deliberately NOT copied:
+# - Certificate names (forti.paraccess.com, external-*.com, modern-money.org, ancient-thing.it,
+#   awake-wood.io ...): R1 gives them as TLS certificate labels used to fingerprint servers, not
+#   as addresses devices look up. Some may be ordinary domains someone else owns.
+# - Customer addresses: R1 redacts them (e.g. 120.150.253.xxx).
+# - BIGPRETZEL (Android): R1 names it but doesn't publish what it is.
+# - Fingerprints P1-P4: for scanning the internet (Censys), not for checking a device.
+#
+# Addresses change hands; each note gives the dates the report saw them in use.
+46.183.184.91	strong	R2: Graphite server contacted by a journalist's iPhone, Jan-early Feb 2025; matched P1 until at least 12 Apr 2025 (VPS rented from EDIS Global)
+84.110.122.27	strong	R1: returned Tier 1 (victim-facing) certificates Jul-Sep 2023; static address in Israel
+178.237.39.204	strong	R1: Tier 1 (victim-facing) address that later returned a Tier 2 certificate
+84.110.47.82	lead	R1: static address in Israel returning Paragon Tier 2 certificates 2021-2025 ("Paragon and customer endpoints")
+84.110.47.83	lead	R1: as above, 2021-2024
+84.110.47.84	lead	R1: in the same range (84.110.47.82-86) the report links to Paragon
+84.110.47.85	lead	R1: as above, Tier 2 certificate from Sep 2024
+84.110.47.86	lead	R1: as above, Tier 2 certificate 2022-2024 and from May 2024
