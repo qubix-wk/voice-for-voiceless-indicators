@@ -1,0 +1,144 @@
+{
+ "updated": "2026-10-30T00:16:25+00:00",
+ "sources": [
+  {
+   "name": "Citizen Lab reports (reviewed)",
+   "url": "https://raw.githubusercontent.com/qubix-wk/voice-for-voiceless-indicators/main/lists/citizenlab-reviewed.tsv",
+   "format": "curated-tsv",
+   "family": "Citizen Lab report",
+   "category": "mercenary"
+  },
+  {
+   "name": "Paragon Graphite (hand-copied from Citizen Lab, 2025)",
+   "url": "https://raw.githubusercontent.com/qubix-wk/voice-for-voiceless-indicators/main/lists/paragon-graphite-citizenlab.tsv",
+   "format": "curated-tsv",
+   "family": "Paragon Graphite",
+   "category": "mercenary"
+  },
+  {
+   "name": "Withdrawn indicators",
+   "url": "https://raw.githubusercontent.com/qubix-wk/voice-for-voiceless-indicators/main/lists/withdrawals.tsv",
+   "format": "withdrawals-tsv",
+   "category": "withdrawals"
+  },
+  {
+   "name": "Amnesty International investigation: 2018-08-01_nso",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2018-08-01_nso/indicators.csv",
+   "format": "csv-domain-ip",
+   "family": "Amnesty investigation 2018-08-01 (nso)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2018-12-19_best_practice",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2018-12-19_best_practice/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2018-12-19 (best practice)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2019-03-06_egypt_oauth",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2019-03-06_egypt_oauth/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2019-03-06 (egypt oauth)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2019-08-16_evolving_phishing",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2019-08-16_evolving_phishing/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2019-08-16 (evolving phishing)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2019-10-10_nso_morocco",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2019-10-10_nso_morocco/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2019-10-10 (nso morocco)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2020-03-12_uzbekistan",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2020-03-12_uzbekistan/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2020-03-12 (uzbekistan)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2020-06-15_india",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2020-06-15_india/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2020-06-15 (india)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2020-09-25_finfisher",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2020-09-25_finfisher/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2020-09-25 (finfisher)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2021-02-24_vietnam",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2021-02-24_vietnam/indicators/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2021-02-24 (vietnam)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2021-05-28_qatar",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2021-05-28_qatar/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2021-05-28 (qatar)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2021-07-18_nso",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2021-07-18_nso/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2021-07-18 (nso)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2021-10-07_donot",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2021-10-07_donot/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2021-10-07 (donot)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2021-12-16_cytrox",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2021-12-16_cytrox/cytrox.stix2",
+   "format": "stix2",
+   "family": "Amnesty investigation 2021-12-16 (cytrox)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2021-12-16_cytrox",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2021-12-16_cytrox/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2021-12-16 (cytrox)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2023-03-29_android_campaign",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2023-03-29_android_campaign/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2023-03-29 (android campaign)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2024-05-02_wintego_helios",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2024-05-02_wintego_helios/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2024-05-02 (wintego helios)",
+   "category": "targeted"
+  },
+  {
+   "name": "Amnesty International investigation: 2024-12-16_serbia_novispy",
+   "url": "https://raw.githubusercontent.com/AmnestyTech/investigations/master/2024-12-16_serbia_novispy/domains.txt",
+   "format": "domains-txt",
+   "family": "Amnesty investigation 2024-12-16 (serbia novispy)",
+   "category": "targeted"
+  }
+ ]
+}
